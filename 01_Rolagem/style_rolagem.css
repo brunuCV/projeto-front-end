@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.pag1{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(imagens/pexels-daniel-fernandez-18118276.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pag2{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(imagens/pexels-lachlan-ross-5967796.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pag3{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(imagens/pexels-nahuel-robledo-18115027.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pag4{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(imagens/pexels-ricardo-ledesma-18104860.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pag5{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(imagens/pexels-stephen-leonardi-17994239.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.interface{
+    height: 100vh;
+    scroll-snap-type: y mandatory;  /*quando rolar a tela do site ira grudar para outra*/
+    overflow-y: scroll;
+
+}
+
+
+.interface section{  /*classe se coloca ponto tag no css nao se coloca*/
+    height: 100vh;
+    scroll-snap-align: start; /* gruda no começo da tela*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    position: sticky; /*sobrepõe a pagina*/
+    top: 0;
+    left: 0;
+}
