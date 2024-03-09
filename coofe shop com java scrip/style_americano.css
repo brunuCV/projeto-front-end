@@ -1,0 +1,358 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --main-color: #88653ec9;
+    --back-color: #5A2E2E;
+    --black: #221909;
+    --bg: #030308;
+    --border: .1rem solid #ffffff4d;
+}
+
+* {
+   font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: .2s linear;
+}
+
+body{
+    background-color: var(--bg);
+}
+
+header{
+    background-color: var(--main-color);
+    border-bottom: var(--border);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 7%;
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    transition: 1s;
+    background-size: cover;
+}
+
+header.rolagem{
+   background-color: var(--black);
+   padding: 20px 4%;
+}
+
+header.rolagem a{
+    color: #000000;
+}
+
+header ul{
+    list-style-type: none;
+}
+
+header ul li{
+    display: inline-block;
+    margin: 0 40px;
+}
+
+header img{
+    height: 6rem;
+}
+
+header .navbar a{
+    margin: 1rem;
+    font-size: 1.3rem;
+    color: #ffffff;
+}
+
+header .navbar a:hover{
+    color: var(--main-color);
+    border-bottom: .1rem solid var(--main-color);
+    padding-bottom: .5rem;
+}
+
+.home{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-image: url(imagens/americano_banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;    
+}
+
+.home .conteudo{
+    max-width: 60rem;
+    padding-left: 2rem;
+}
+
+.home .conteudo h3{
+    font-size: 6rem;
+    color: #fff;
+}
+
+.home .conteudo h2{
+    color: #3b3b3b;
+    
+}
+
+.home .conteudo p{
+    font-size: 1.2rem;
+    font-weight: lighter;
+    line-height: 1.8;
+    padding: 1rem;
+    color: #eee;
+}
+
+.texto_sobre h1{
+    color: #fff;
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 1.5rem;
+    font-size: 1rem;
+    color: #fff;
+    background-color: var(--main-color);
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.btn:hover{
+    letter-spacing: .1rem;
+    background-color: var(--main-color);
+    
+}
+
+.sobre .conteudo2{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    background-color: var(--black);
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.foto_sobre{
+    width: 400px;
+    height: 300px;
+    margin-right: 1rem;
+    background-color: #fff;
+}
+
+.foto_sobre img{
+    width: 400px;
+    height: 300px;
+}
+
+
+.sobre .conteudo2 .texto_sobre p{
+    font-size: .8rem;
+    color: #ccc;
+    line-height: 1.8;
+}
+
+.sobre conteudo2 h3{
+    font-size: 3rem;
+    color: #fff;
+    margin-bottom: 1rem;
+
+}
+
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 1.5rem;
+    font-size: 1rem;
+    color: #fff;
+    background-color: var(--main-color);
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.btn:hover{
+    letter-spacing: .1rem;
+    background-color: var(--main-color);
+    
+}
+
+
+.contato{
+    width: 80%;
+    margin: auto;
+    padding-top: 80px;
+}
+
+.contato .row{
+    display: flex;
+    background-color: var(--black);
+    flex-wrap: wrap;
+    gap: 1rem;
+
+}
+
+.contato .row{
+    flex: 1 1 45rem;
+    object-fit: cover;
+
+}
+
+.contato .row form{
+    flex: 1 1 45rem;
+    padding: 5rem 2rem;
+    text-align: center;
+}
+
+.contato .row form h3{
+    text-transform: uppercase;
+    font-size: 2rem;
+    color: #fff;
+}
+
+.contato .row form .inputBox{
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    background: var(--bg);
+    border: var(--border);
+}
+
+.contato .row form .inputBox input{
+    width: 100%;
+    padding: 1rem;
+    font-size: 1rem;
+    color: #fff;
+    background: none;
+}
+
+
+
+
+footer{
+    background: var(--black);
+    text-align: center;
+}
+
+.footer .redes{
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.footer .redes a{
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    font-size: 2rem;
+    color: #fff;
+
+}
+
+.footer .redes a:hover{
+    background-color: var(--main-color);
+}
+
+.footer .links{
+    display: flex ;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+    gap:1rem;
+}
+
+.credit{
+    color: #fff;
+    text-align: center;
+    font-size: 15px;
+}
+
+.footer  .links a{
+    padding: .7rem 2rem;
+    color: #fff;
+    border: var(--border);
+    font-size: 2rem;
+}
+
+.footer .links a:hover{
+    background: var(--main-color);
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background:var(--bg);
+}
+
+/*resposividade*/
+
+@media (max-width:768px){
+    
+    
+    header .navbar{
+        display: none;
+     }
+     
+    header .logo{
+        margin-left: 33%;
+    }
+
+    .sobre .conteudo2{
+        display: block;
+    }
+
+    .menu_promocoes{ 
+        display: block;
+    }
+
+    .menu_promocoes .box_container{
+        display: block;
+        margin: top 20px;
+    }
+
+    .menu_promocoes .box_container .box{
+        margin-top: 20px;
+    }
+
+    .ambiente .box-container{
+        display: block;
+    }
+
+    .banner{
+        display: block;
+    }
+
+    .principal{
+        display: block;
+    }
+    
+    .box01{
+        display: block;
+    }
+
+    .texto1{
+        display: block;
+    }
+
+    .pricipal .texto1 p{
+        display: block;
+    }
+
+    .contato .heading{
+        display: block;
+    }
+
+    .home{
+        background-image: url(imagens/banner_responsivo_americano.png);
+    }
+    .home .conteudo{
+        display: block;
+        text-align: center;
+        padding-top: 80%;
+        
+    }
+
+}

@@ -1,0 +1,391 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --main-color: #88653ec9;
+    --back-color: #5A2E2E;
+    --black: #221909;
+    --bg: #030308;
+    --border: .1rem solid #ffffff4d;
+}
+
+
+* {
+    font-family: 'Poppins', sans-serif;
+     margin: 0;
+     padding: 0;
+     outline: none;
+     border: none;
+     text-decoration: none;
+     transition: .3s linear;
+ }
+
+
+ body{
+    background-color: var(--bg);
+}
+
+
+header{
+    background-color: var(--black);
+    border-bottom: var(--border);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 7%;
+    position: fixed;
+    top: 0; left: 0; right: 0;
+}
+
+
+header img{
+    height: 6rem;
+}
+
+
+header .navbar a{
+    margin: 1rem;
+    font-size: 1.3rem;
+    color: #fdfdfd;
+}
+
+
+header .navbar a:hover{
+    color: var(--black);
+    border-bottom: .1rem solid var(--main-color);
+    padding-bottom: .5rem;
+}
+
+
+.banner{
+    min-height: 85vh;
+    display: flex;
+    align-items: center;
+    background-size: cover;
+    background-position: center; 
+    background-image: url(imagens/banner_unidades.png);
+    background-repeat: no-repeat;
+}
+
+
+.titulo h3{
+    font-size: 3rem;
+    color: #fff;
+    margin-bottom: 1rem;
+
+}
+
+.heading{
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    padding-bottom: 2rem;
+    padding-top: 3.5rem;
+    font-size: 3rem;
+}
+
+.heading span{
+    color: var(--main-color);
+    text-transform: uppercase;
+}
+
+/*unidades*/
+
+main{
+	width: 80%;
+    height: 1000px;
+	padding: 5px;
+	background-color: var(--bg);
+	margin: auto;
+	display: grid;
+	grid-template-columns: 20% auto ;
+	gap: 15px;
+    border-radius: 10px;
+    
+    
+}
+
+
+.boxP1{
+   
+    background-image: url(imagens/CAFETERIA1.png);
+   
+}
+
+.boxG1{
+    background-color: var(--black);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100PX;
+    color: #ffffff;
+}
+
+.boxP2{
+   
+    background-image: url(imagens/CAFETERIA2.png);
+}
+
+.boxG2{
+    background-color: var(--black);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100PX;
+    color: #ffffff;
+}
+
+.boxP3{
+    
+    background-image: url(imagens/CAFETRIA3.png);
+   
+}
+
+.boxG3{
+    background-color: var(--black);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100PX;
+    color: #ffffff;
+}
+
+
+.boxP4{
+    
+    background-image: url(imagens/CAFETERIA4.png);
+   
+}
+
+.boxG4{
+    background-color: var(--black);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100PX;
+    color: #ffffff;
+}
+
+
+
+
+.btn{
+    margin-top: 9rem;
+    display: inline-block;
+    padding: 1.5rem;
+    font-size: 1rem;
+    color: #fff;
+    background-color: var(--main-color);
+    cursor: pointer;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.btn:hover{
+    letter-spacing: .1rem;
+    background-color: var(--main-color);
+    
+}
+
+.contato{
+    width: 80%;
+    margin: auto;
+    padding-top: 80px;
+}
+
+.contato .row{
+    display: flex;
+    background-color: var(--black);
+    flex-wrap: wrap;
+    gap: 1rem;
+
+}
+
+.contato .row{
+    flex: 1 1 45rem;
+    object-fit: cover;
+
+}
+
+.contato .row form{
+    flex: 1 1 45rem;
+    padding: 5rem 2rem;
+    text-align: center;
+}
+
+.contato .row form h3{
+    text-transform: uppercase;
+    font-size: 2rem;
+    color: #ffffff;
+}
+
+.contato .row form .inputBox{
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    background: var(--bg);
+    border: var(--border);
+}
+
+.contato .row form .inputBox input{
+    width: 100%;
+    padding: 1rem;
+    font-size: 1rem;
+    color: #ffffff;
+    background: none;
+}
+
+
+
+
+.footer{
+   
+   text-align: center;
+    
+}
+
+.footer .redes{
+    padding: 5rem;
+    text-align: center;
+}
+
+.footer .redes a{
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    font-size: 2rem;
+    color: #ffffff;
+
+}
+
+.footer .redes a:hover{
+    background-color: var(--main-color);
+}
+
+.footer .links{
+    display: flex ;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+    gap:1rem;
+}
+
+.credit{
+    color: #ffffff;
+    text-align: center;
+    font-size: 15px;
+}
+
+.footer  .links a{
+    padding: .7rem 2rem;
+    color: #fff;
+    border: var(--border);
+    font-size: 2rem;
+}
+
+.footer .links a:hover{
+    background: var(--main-color);
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background:var(--bg);
+}
+
+/*resposividade*/
+
+@media (max-width:768px){
+    
+    
+    header .navbar{
+        display: none;
+     }
+     
+    header .logo{
+        margin-left: 33%;
+    }
+
+    main{
+        margin-top: 20px;
+        display: block; /* alinha em forma de coluna*/
+        padding: 5px; /*lagura da borda*/
+        width: 80%; /*largura*/
+        margin-bottom: 5px;
+        
+        
+    }
+    .boxP1{
+        width: 100%;
+        height: 250px;
+        display: block;
+        margin-bottom: 5px
+        
+    }
+
+    .boxP2{
+        width: 100%;
+        height: 250px;
+        display: block;
+        margin-bottom: 5px
+        
+    }
+
+    .boxP3{
+        width: 100%;
+        height: 250px;
+        display: block;
+        margin-bottom: 5px
+        
+    }
+
+    .boxP4{
+        width: 100%;
+        height: 250px;
+        display: block;
+        margin-bottom: 5px
+        
+    }
+
+    .boxG1{
+        display: block;
+        margin-bottom: 5px;
+        width: 50%;
+        height: 150px;
+        
+    }
+    .boxG2{
+        display: block;
+        margin-bottom: 5px;
+        width: 50%;
+        height: 150px;
+        
+    }
+    .boxG3{
+        display: block;
+        margin-bottom: 5px;
+        width: 50%;
+        height: 150px;
+        
+        
+    }
+    .boxG4{
+        display: block;
+        margin-bottom: 5px;
+        width: 50%;
+        height: 150px;
+         
+    }
+    
+    .footer{
+    
+        display: none;
+    }
+
+    .banner{
+        background-image: url(imagens/reponsivo_banner\ unidades.png);
+    }
+    
+}
