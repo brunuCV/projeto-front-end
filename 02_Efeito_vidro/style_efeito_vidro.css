@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.2rem;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(imagem/pexels-stephen-leonardi-17994239.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    width: 100%;
+    max-width: 800px;
+    background-color: transparent;
+    padding: 40px;
+    border: 0.1px solid #fff;
+    border-radius: 20px;
+
+    /*animaçao do site*/
+    backdrop-filter: blur(0px); /*efeito espelho esfumaçado*/
+    overflow: hidden;
+    transition: backdrop-filter 1s;
+}
+
+.text{
+   color: #fff;
+   /*animaçao do texto*/
+   position: relative;
+   top: 200px;
+   transition: top 5s;
+}
+
+.container:hover .text{
+    top: 0;
+}
+
+.container:hover{
+    backdrop-filter: blur(10px);
+}
